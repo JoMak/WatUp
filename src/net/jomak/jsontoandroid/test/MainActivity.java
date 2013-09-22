@@ -3,7 +3,7 @@ package net.jomak.jsontoandroid.test;
 import net.jomak.jsontoandroid.R;
 import net.jomak.jsontoandroid.R.layout;
 import net.jomak.jsontoandroid.R.menu;
-import net.jomak.watup.datagrabber.DataGrabber;
+import net.jomak.watup.datagrabber.CourseGrabber;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        System.out.println(new DataGrabber().getCourseFromRoom("RCH307"));
+        System.out.println(new CourseGrabber().getCourseFromRoom("RCH307"));
     }
 
     @Override

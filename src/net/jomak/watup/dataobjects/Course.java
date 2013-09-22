@@ -45,7 +45,7 @@ public class Course {
 	private String url;
 	private ArrayList<String> prerequisites;
 	/**
-	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabber#getCourseSearch(String)}
+	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabberFactory#getCourseSearch(String)}
 	 */
 	public Course(String deptAcronym, String number, String title, String description) {
 		super();
@@ -55,7 +55,7 @@ public class Course {
 		this.description = description;
 	}
 	/**
-	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabber#getCourseInfo(String)}
+	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabberFactory#getCourseInfo(String)}
 	 */
 	public Course(String id, String deptAcronym, String number, String title,
 			String description, boolean hasLec, boolean hasLab, boolean hasTst,
@@ -99,7 +99,7 @@ public class Course {
 		this.url = url;
 	}
 	/**
-	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabber#getCoursePrerequisites(String)}
+	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabberFactory#getCoursePrerequisites(String)}
 	 */
 	public Course(String deptAcronym, String title, String number, ArrayList<String> prerequisites, String type) {
 		super();
@@ -110,7 +110,7 @@ public class Course {
 		this.type = type;
 	}
 	/**
-	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabber#getCourseFromRoom(String)}
+	 * Constructor used for {@link net.jomak.watup.datagrabber.DataGrabberFactory#getCourseFromRoom(String)}
 	 */
 	public Course(String id, String deptAcronym, String number,
 			String building, String room, String startTime, String endTime,

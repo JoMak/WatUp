@@ -1,3 +1,6 @@
+/**
+ * Base class for converting JSON objects from a URL to an object.
+ */
 package net.jomak.watup.json;
 
 public abstract class JSONConverter{

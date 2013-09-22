@@ -1,3 +1,6 @@
+/**
+ * Parses URL to JSON Objects
+ */
 package net.jomak.watup.json;
 
 import java.io.BufferedReader;
@@ -15,8 +18,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.util.Log;
-
-
 
 public class JSONParser {
 	private String TAG = "JSONParser";
